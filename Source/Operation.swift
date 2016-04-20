@@ -324,7 +324,8 @@ public class HTTP: NSOperation {
 	
 	/**
 	Convenience bool to flag as operation userInitiated if necessary
-	*/
+     */
+    @available(iOS 8.0, *)
 	var userInitiated: Bool {
 		get {
 			return qualityOfService == .UserInitiated
